@@ -13,8 +13,14 @@ This is where the purpose will go
 
 # Results 
 This is where the results will go
+![Original model code](/Resources/original_model_code.png)
+![Original trained model code](/Resources/original_trained_model_code.png)
+![Original accuracy history](/Resources/original_accuracy_history.png)
+![Original loss history](/Resources/original_loss_history.png)
 
 ---
 
 # Summary
-After viewing the results of the model and my manually created optimizations, I would recommend using an automated optimized such as the keras-tuner package. The keras-tuner package would optimally select which activation function to use, how many neurons would be in the first hidden layer, and the number of subsequent hidden layers as well as the neurons within those layers. After creating a keras-tuner optimization function and running the training data through the tuning model, it can return the best hyperparameters and best models to use based on the parameters set in the function. We could then run the testing data against the best models to receive a model with high accuracy and low loss. It would be possible to store and rerun the model after this process. We would need to be wary of overfitting based on training data, but dilligence and attention can help gaurd against this possibility. 
+After viewing the results of the model and my manually created optimizations, I would recommend using an automated optimized such as the keras-tuner package. The keras-tuner package would optimally select which activation function to use, how many neurons would be in the first hidden layer, and the number of subsequent hidden layers as well as the neurons within those layers. 
+After creating a keras-tuner optimization function and running the training data through the tuning model, it can return the best hyperparameters and best models to use based on the parameters set in the function. We could then run the testing data against the best models to receive a model with high accuracy and low loss. It would be possible to store and rerun the model after this process. 
+We would need to be wary of overfitting based on training data, but dilligence and attention can help gaurd against this possibility. 
