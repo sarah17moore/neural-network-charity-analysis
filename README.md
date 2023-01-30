@@ -53,6 +53,21 @@ The original model had 76.70705914497375% loss and 51.31195187568665% accuracy. 
 
 This is a graphic depiction of the accuracy and loss history throughout the Epoch sessions looked very similar to the original model.
 
+## Optimization Attempt #2 
+In the second attempt to optimize the original model code, column "EIN" was dropped in the clean up phase. I decided to keep "NAME" and bin the values together instead of dropping the column as it seems some companies apply for investment funding repeatedly. I binned names that appeared less than 10 times into an "Other" variable.  "APPLICATION_STATUS" and "CLASSIFICATION" are binned to minimize the amount of rare values in the final model. After preprocessing, the data is split, scaled, fit, and trained just as the original model was before. 
+
+The model was run for 25 Epochs due to the model hitting minimal loss and peak accuracy within very few Epoch runs.
+
+![t2 accuracy loss results](/Resources/t2_accuracy_loss.png)
+*Test 2 accuracy and loss results*
+
+The second optimization attempt model had 54.37097549438477% loss and 76.25656127929688% accuracy. This model has satisfactory performance. However, it is to note that accuracy at one point peaks high, and then returns to an average similar to the original average (53.17%).
+
+![t2 accuracy history](/Resources/t2_accuracy_history.png)
+*Test 2 accuracy history*
+
+This is a graphic depiction of the accuracy history throughout the Epoch sessions.
+
 ---
 
 # Summary
