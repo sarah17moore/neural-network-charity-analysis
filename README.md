@@ -21,12 +21,12 @@ In the original model code, both columns "EIN" and "NAME" are dropped in the cle
 ![Original trained model code](/Resources/original_trained_model_code.png)
 *Original trained model code*
 
-The model was run for 25 Epochs due to the model hitting minimal loss and peak accuracy within very few Epoch runs.
+The model was run for 100 Epochs.
 
 ![Original accuracy lossh results](/Resources/original_accuracy_loss.png)
 *Original accuracy and loss results*
 
-The original model had 76.70705914497375% loss and 51.31195187568665% accuracy. This model has poor performance whether that be for the input data values, number of hidden layers, or number of neurons in those layers. 
+The original model had 75.28011798858643% loss and 53.43440175056458% accuracy. This model has poor performance whether that be for the input data values, number of hidden layers, or number of neurons in those layers. 
 
 ![Original accuracy history](/Resources/original_accuracy_history.png)
 *Original accuracy history*
@@ -38,6 +38,7 @@ This is a graphic depiction of the accuracy history throughout the Epoch session
 
 This is a graphic depiction of the loss history throughout the Epoch sessions.
 
+--due to the model hitting minimal loss and peak accuracy within very few Epoch runs.
 ---
 
 # Summary
