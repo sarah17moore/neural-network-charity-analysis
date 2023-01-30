@@ -38,7 +38,21 @@ This is a graphic depiction of the accuracy history throughout the Epoch session
 
 This is a graphic depiction of the loss history throughout the Epoch sessions.
 
---due to the model hitting minimal loss and peak accuracy within very few Epoch runs.
+## Optimization Attempt #1 
+In the first attempt to optimize the original model code, columns "EIN", "NAME", "SPECIAL_CONSIDERATIONS", and "STATUS" are dropped in the clean up phase. "SPECIAL_CONSIDERATIONS" and "STATUS" are both columns with binary (Yes or No) values. I was curious to see if removing these binary values would effect the accuracy of the model.  "APPLICATION_STATUS" and "CLASSIFICATION" are binned to minimize the amount of rare values in the final model. After preprocessing, the data is split, scaled, fit, and trained just as the original model was before. 
+
+![t1 model code](/Resources/t1_trained_model_code.png)
+*Test 1 trained model code*
+
+The model was run for 25 Epochs due to the model hitting minimal loss and peak accuracy within very few Epoch runs.
+
+![t1 accuracy loss results](/Resources/t1_accuracy_loss.png)
+*Test 1 accuracy and loss results*
+
+The original model had 76.70705914497375% loss and 51.31195187568665% accuracy. This model has poor performance whether that be for the input data values, number of hidden layers, or number of neurons in those layers. 
+
+This is a graphic depiction of the accuracy and loss history throughout the Epoch sessions looked very similar to the original model.
+
 ---
 
 # Summary
