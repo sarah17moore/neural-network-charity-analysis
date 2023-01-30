@@ -68,6 +68,16 @@ The second optimization attempt model had 54.37097549438477% loss and 76.2565612
 
 This is a graphic depiction of the accuracy history throughout the Epoch sessions.
 
+## Optimization Attempt #3 
+In the third attempt to optimize the original model code, column "EIN" was dropped in the clean up phase. I keep "NAME" and bin the values together as it seems some companies apply for investment funding repeatedly. I binned names that appeared less than 5 times into an "Other" variable.  "APPLICATION_STATUS" and "CLASSIFICATION" are binned to minimize the amount of rare values in the final model. After preprocessing, the data is split, scaled, fit, and trained just as the original model was before. However, there is an additional hidden layer and nodes are changed to 12, 8 & 6 from 20 & 5. 
+
+The model was run for 200 Epochs to see if any additional flattening would occur.
+
+![t3 accuracy loss results](/Resources/t3_accuracy_loss.png)
+*Test 3 accuracy and loss results*
+
+The third optimization attempt model had 69.18411254882812% loss and 53.55101823806763% accuracy. This model has poor performance. 
+
 ---
 
 # Summary
